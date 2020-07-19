@@ -1,0 +1,20 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.9961593566865885 -0.08749557353526188 -0.0033257626941225254 0.41601177195256617
+  position -0.07279964516005852 1.4969815810164595 1.2296275797695393
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  size 5 0 5
+}
+Desk {
+}
+IprHd6m180 {
+  hidden rotation_1 0 1 0 0.12885403531346606
+  controller "ipr_cube"
+}

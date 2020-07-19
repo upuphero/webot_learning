@@ -1,0 +1,101 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.0017034497113322354 -0.9892752676182581 -0.14605322022435843 3.160216781491793
+  position 0.10316580693498358 0.4162963197773501 -1.0925542512491178
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  rotation 0 0 1 0
+  size 3 0 3
+}
+DEF box Solid {
+  translation 0.211754 0.137461 -0.224305
+  scale 1.2 1.2 1.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.2 0.1
+      }
+    }
+  ]
+  name "box"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+    density 1
+  }
+}
+DEF base Solid {
+  translation -0.229095 0.0593219328 0.566812
+  rotation -1.449729698496529e-15 -1 1.1264419475474788e-15 -0.04673150719573505
+  scale 1.2 1.2 1.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "box(1)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+}
+UR3e {
+  hidden translation_1 0 0 0.152
+  hidden rotation_1 -1.52004716622497e-21 3.935183561891663e-17 1 0.00017219691359618444
+  hidden translation_2 0 0.12 0
+  hidden rotation_2 0 1 0 1.5709183594104723
+  hidden translation_3 0 -0.093 0.244
+  hidden rotation_3 0 1 0 3.2019110882461e-05
+  hidden translation_4 0 0 0.213
+  hidden rotation_4 0 0.9999999999999999 0 1.570806774930827
+  hidden translation_5 0 0.104 0
+  hidden rotation_5 0 0 1 1.5554385662864153e-05
+  hidden translation_6 -1.0414128532382666e-10 4.391798869018948e-10 0.08500409038631654
+  hidden rotation_6 0 -1 0 4.383880090225895e-06
+  hidden translation_9 -0.0455 0.0214 0.036
+  hidden rotation_9 0.7068252250598965 0.7073882252407774 3.1193085451558938e-06 3.1415982388051447
+  hidden translation_10 0.02 0 0
+  hidden rotation_10 0 0 1 0
+  hidden translation_11 0.05 -0.028 0
+  hidden rotation_11 0 0 -1 0.5200000134193389
+  hidden translation_12 0.039 0 0
+  hidden rotation_12 0 0 1 0
+  hidden translation_13 -0.0455 0.0214 -0.036
+  hidden rotation_13 0.7068252250598871 0.7073882252407824 3.120347115103399e-06 3.1415982408839382
+  hidden translation_14 0.02 0 0
+  hidden rotation_14 0 0 1 0
+  hidden translation_15 0.05 -0.028 0
+  hidden rotation_15 0 0 -1 0.5200000143286989
+  hidden translation_16 0.039 0 0
+  hidden translation_17 0.02 0 0
+  hidden rotation_17 0 0 1 0
+  hidden translation_18 0.05 -0.028 0
+  hidden rotation_18 0 0 -1 0.5199999856177117
+  hidden translation_19 0.039 0 0
+  translation -0.25 0.0299999 0.169904
+  rotation 1 0 0 4.71
+  controller "ure_self"
+  controllerArgs "3"
+  selfCollision FALSE
+  toolSlot [
+    DistanceSensor {
+      rotation 0 0 1 1.57
+    }
+    Robotiq3fGripper {
+    }
+  ]
+}
